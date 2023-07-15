@@ -13,6 +13,10 @@
     background: #FF900E;
     border:0;
    }
+   .lightgray-color{
+    font-size: 14px;
+    color: #727272;
+   }
 
 
 
@@ -38,10 +42,10 @@
     font-size: 1.2rem;
     font-weight: 500;
     }
-  .nav-title{
+  .section-title{
     color: #131313;
     font-family: Work Sans;
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-weight: 700;
   }
 
@@ -59,9 +63,34 @@ img{
   margin: 0 auto;
 }
 .banner-title{
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .banner-description{
-  font-size: 14px;
   margin: 20px;
+  font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* media query starts here for responsive layout */
+
+/* for mobile device  */
+@media screen and (max-width:576px) {
+  nav{
+    flex-direction: column;
+    padding: 0;
+  }
+  .banner{
+    padding: 0 0;
+  }
+  .banner-info{
+    width: 100%;
+  }
 }
