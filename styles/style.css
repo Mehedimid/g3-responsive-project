@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
   *{
     font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
     }
    .btn-primary{
     color: #FFF;
@@ -31,10 +33,10 @@
   
   /* nav styles starts here  */
   header{
-    background: rgba(255, 144, 14, 0.10);
+     background: rgba(255, 144, 14, 0.10);
+     max-width:100vw;
   }
   nav{
-    max-width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,8 +74,8 @@
 .banner-title{
   font-size: 3rem;
 }
-.info-description{
-  margin: 20px;
+.banner-description{
+  margin:20px;
   font-size: 0.9rem;
 }
 
@@ -82,7 +84,6 @@
 
 
 main{
-  max-width: 100vw;
   margin: 130px 130px;
   /* background-color: aquamarine; */
 }
@@ -105,10 +106,76 @@ main{
   width: 100%;
 }
 .team-info-description{
+  margin: 20px 0;
   font-size: 0.9rem;
 }
 .features-text{
   color: #FF900E;
+}
+
+
+
+
+
+/* features section styles start  */
+.features-container{
+  display: flex;
+  margin-top: 130px;
+  gap: 4rem;
+}
+.features-title{
+  border-left: #FF900E 4px solid;
+  padding-left: 20px;
+}
+.features-container > div{
+  width: 50%;
+}
+.features-picture img{
+  width: 100%;
+  margin-left: 30px;
+  height: 90%;
+}
+.features-cards{
+  margin: 50px 15px;
+}
+.features-description{
+  color: #727272;
+  font-size: 0.9rem;
+  margin: 20px 0;
+}
+.fcard{
+  margin: 40px;
+  border: 0;
+  box-shadow: 2px 2px 5px wheat;
+  padding: 7px;
+}
+.facard-description{
+  margin-top: 0.1rem;
+  color: #727272;
+  font-size: 0.9rem;
+  margin: 15px 0;
+}
+.ten-year{ 
+  font-size: 3rem;
+  margin-bottom: 1px;
+  margin-top: 20px;
+}
+.ten-year-container p{
+  font-size: 1rem;
+  margin-top: 1px;
+
+}
+.ten-year-container{
+  padding: 20px;
+  width: 15rem;
+  color: white;
+  background-color: #FF900E;
+  text-align: center;
+  border: 0;
+  border-radius: 8px;
+  font-weight: 700px;
+  position: relative;
+  bottom: 100px;
 }
 
 
@@ -122,7 +189,7 @@ main{
 .fact-description{
   color: #727272;
   font-size: 0.9rem;
- margin-bottom: 30px;
+ margin: 20px 0 30px;
   width: 50%;
 }
 .fact-card-container{
@@ -170,7 +237,7 @@ main{
   font-size: 0.9rem;
   width: 50%;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin: 20px auto 40px;
 }
 .sponsor-img{
   display: flex;
@@ -179,6 +246,21 @@ main{
 }
 
 
+
+/* footer section styles  */
+footer{
+  background: rgba(255, 144, 14, 0.10);
+  max-width:100vw;
+  margin: 130px 130px;
+  
+}
+footer p{
+  color:  #424242;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin:100px 200px;
+}
 
 
 
@@ -204,12 +286,13 @@ main{
   /* header  */
   nav, 
   .sponsor-img,
-  .sponsor-container{
+  .sponsor-container,
+  .features-container{
     flex-direction: column;
     padding: 0 20px;
   }
   .nav-ul{
-    gap: 2rem;
+    gap: 1rem;
     justify-content: center;
   }
   nav{
@@ -264,7 +347,30 @@ main{
   width: 50%;
 }
 
+/* features styles  */
+.features-container > div{
+width: 100%;
 }
+.features-picture img{
+  width: 100%;
+  margin-left: 0px;
+}
+.features-cards{
+  margin: 20px 0px;
+}
+.ten-year-container{
+  position: static;
+
+}
+footer{
+  margin: 100px 0px;
+}
+footer p{
+   margin: 50px 20px  ;
+}
+}
+
+
 
 
 /* for medium device  */
@@ -327,5 +433,24 @@ main{
   width: 50%;
 }
 
-
+/* features styles  */
+.features-container > div{
+  width: 100%;
+  }
+  .features-picture img{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .features-cards{
+    margin: 20px 0px;
+  }
+  .ten-year-container{
+    position: static;
+  }
+  footer{
+    margin: 100px 0px;
+  }
+  footer p{
+     margin: 50px 20px  ;
+  }
 }
