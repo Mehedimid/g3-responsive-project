@@ -27,19 +27,24 @@
     background: rgba(255, 144, 14, 0.10);
   }
   nav{
+    max-width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 130px;
   }
+  nav > div{
+    width: 50%;
+  }
   nav ul{
     list-style-type: none;
     display: flex;
+    justify-content: flex-end;
     gap: 30px;
   }
   nav ul li a{
     text-decoration: none;
-    color: var(--dark-02, #424242);
+    color: #424242;
     font-size: 1.2rem;
     font-weight: 500;
     }
@@ -76,7 +81,7 @@
 
 
 main{
-  max-width: 1400px;
+  max-width: 100vw;
   margin: 130px 130px;
   /* background-color: aquamarine; */
 }
@@ -169,10 +174,16 @@ main{
   /* header  */
   nav{
     flex-direction: column;
-    padding: 0;
+    padding: 0 20px;
+  }
+  .nav ul{
+    flex-direction: column;
+  }
+  nav{
+    margin: 0 auto;
   }
   .banner{
-    padding: 0 0;
+    padding: 0 20px;
   }
   .banner-info{
     width: 100%;
@@ -204,7 +215,7 @@ main{
   flex-direction: column;
 }
 .card{
-  margin:1rem auto;
+  margin:0.5rem auto;
 }
 }
 
@@ -236,6 +247,21 @@ main{
   max-width: 100%;
   margin: 100px 50px;
 
+}
+/* fact styles  */
+/* fact  */
+.fact{
+  text-align: center;
+}
+.fact-description {
+  width: 100%;
+  margin: 50px 0;
+}
+.fact-card-container{
+  flex-direction: column;
+}
+.card{
+  margin:0.8rem auto;
 }
 
 }
