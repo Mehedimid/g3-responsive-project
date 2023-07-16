@@ -179,10 +179,9 @@ main{
   nav{
     flex-direction: column;
     padding: 0 20px;
-    justify-content: center;
   }
-  .nav ul{
-    flex-direction: column;
+  .nav-ul{
+    justify-content: center;
   }
   nav{
     margin: 0 auto;
@@ -231,6 +230,10 @@ main{
     flex-direction: column;
     padding: 0;
   }
+  .nav-ul{
+    justify-content: center;
+  }
+
   .banner{
     padding: 0 50px;
   }
