@@ -131,25 +131,29 @@ main{
 .card img{
   width: 3rem;
   height: 3rem;
-  margin-top: 20px;
+  margin-top: 30px;
 
 }
 .card-title{
   color:  #727272;
   font-size: 1rem;
   font-weight: 600;
+  margin-top: 2px;
+  margin-bottom: 30px;
 }
 .number{
   color:  #424242;
   font-size: 2rem;
   font-weight: 600;
+  margin-top: 2px;
+  margin-bottom:2px;
 }
 .card{
   border-radius: 8px;
   border: 1px solid #FF900E;
   text-align: center;
   width: 12rem;
-  height: 13rem;
+  
 }
 
 
@@ -175,6 +179,7 @@ main{
   nav{
     flex-direction: column;
     padding: 0 20px;
+    justify-content: center;
   }
   .nav ul{
     flex-direction: column;
