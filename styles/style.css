@@ -209,6 +209,7 @@ main{
     padding: 0 20px;
   }
   .nav-ul{
+    margin: 0 auto;
     justify-content: center;
   }
   nav{
