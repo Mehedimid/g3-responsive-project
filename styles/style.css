@@ -250,7 +250,6 @@ main{
 /* footer section styles  */
 footer{
   background: rgba(255, 144, 14, 0.10);
-  max-width:100vw;
   margin: 130px 130px;
   
 }
@@ -260,6 +259,7 @@ footer p{
   font-size: 0.9rem;
   font-weight: 400;
   margin:100px 200px;
+  padding: 20px 0;
 }
 
 
@@ -295,14 +295,16 @@ footer p{
     gap: 1rem;
     justify-content: center;
   }
-  nav{
-    margin: 0 auto;
-  }
   .banner{
+    margin-top: 50px;
     padding: 0 20px;
   }
   .banner-info{
     width: 100%;
+
+  }
+  nav{
+    gap: 20px;
   }
 
 
@@ -366,7 +368,12 @@ footer{
   margin: 100px 0px;
 }
 footer p{
-   margin: 50px 20px  ;
+   margin: 40px 40px;
+}
+
+
+.sponsor-description{
+  width: 100%;
 }
 }
 
@@ -383,16 +390,21 @@ footer p{
     padding: 0;
   }
   .nav-ul{
-    margin: 20px 0 30px;
+    /* margin:0 30px; */
     justify-content: center;
   }
 
   .banner{
+    margin-top: 50px;
     padding: 0 50px;
   }
   .banner-info{
     width: 100%;
   }
+  nav{
+    gap: 20px;
+  }
+
 
 
   main{
